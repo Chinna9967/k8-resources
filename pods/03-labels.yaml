@@ -6,6 +6,8 @@ metadata:
     environment: production
     app: nginx
 spec:
-  - name: nginx-lables
-    image: nginx
-    
+  containers:
+    - name: nginx-lables
+      image: nginx
+      ports:
+      - containerPorts: 80
