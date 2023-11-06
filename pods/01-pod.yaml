@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name: smaple-pod
+  namespace: roboshop # if we dont give namespace, default namespace will be assainged
+spec:
+  - name: nginx-sample
+    image: nginx:1.14:2
+    ports:
+    - containerPort: 80
